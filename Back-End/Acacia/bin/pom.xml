@@ -11,7 +11,7 @@
 	<groupId>br.org.generation</groupId>
 	<artifactId>Acacia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Acacia</name>
+	<name>Acacia </name>
 	<description>Projeto Integrador</description>
 	<properties>
 		<java.version>16</java.version>
