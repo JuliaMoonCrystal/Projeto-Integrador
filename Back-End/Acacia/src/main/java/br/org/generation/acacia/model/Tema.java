@@ -17,15 +17,15 @@ public class Tema {
 	private long id;
 	
 	@NotNull(message="Titulo obrigatório!")
-	@Size(min=5, max=100)
+	@Size(min=2, max=100)
 	private String titulo;
 	
 	@NotNull(message="Descrição obrigatória!")
-	@Size(min=5, max=1000)
+	@Size(min=2, max=1000)
 	private String descricao;
 	
 	@NotNull(message="Palavra chave obrigatória!")
-	@Size(min=5, max=100)
+	@Size(min=2, max=100)
 	private String palavra_chave;
 	
 	
