@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -22,22 +24,33 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull
-	@Size(min=1,max=90)
+	@NotNull(message = "O nome é obrigatório")
+	@Size(min=2)
 	private String nome;
 	
-	@NotNull
-	@Size(min=1, max=90)
+	@NotNull(message = "O usuário é obrigatório")
+	@NotBlank
+	@Email
 	private String usuario;
 	
-	@NotNull
-	@Size(min=1,max=20)
+	@NotNull(message = "A senha é obrigatória")
+	@NotBlank
+	@Size(min=8, message = "A senha deve ter no mínimo 8 caracteres")
 	private String senha;
 	
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
-
+	
+	public Usuario(long id, String nome, String usuario, String senha) {
+		this.id = id;
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+	}
+	
+	public Usuario() {	}
+	
 	public List<Postagem> getPostagem() {
 		return postagem;
 	}

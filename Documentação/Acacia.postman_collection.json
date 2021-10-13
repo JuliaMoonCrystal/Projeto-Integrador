@@ -1,0 +1,452 @@
+{
+	"info": {
+		"_postman_id": "685b5c13-2fba-4fd6-81e7-b5a125ff46ea",
+		"name": "Acacia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Seguranca",
+			"item": [
+				{
+					"name": "01 - Cadastrar Usuário",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Gustavo\",\r\n    \"usuario\" : \"gustavotaques11@gmail.com\",\r\n    \"senha\" : \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/cadastrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"cadastrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Logar Usuário",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\" : \"gustavotaques11@gmail.com\",\r\n    \"senha\" : \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/logar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"logar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Método Get All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/usuarios/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Postagens",
+			"item": [
+				{
+					"name": "01 - Consultar Todas as Postagens",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/postagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Consultar Postagem por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/postagem/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Consultar Postagem por Título",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/postagem/titulo/primeira",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem",
+								"titulo",
+								"primeira"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Cadastrar Postagem",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\" : \"Nossa terceira postagem\",\r\n    \"endereco\" : \"Zona Sul, SP\",\r\n    \"texto\" : \"Problemas com água encanada\",\r\n    \"usuario\" : {\r\n        \"id\" : 1\r\n    },\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Editar Postagem",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : \"2\",\r\n    \"titulo\" : \"Nossa segunda postagem\",\r\n    \"endereco\" : \"Zona Sul, SP\",\r\n    \"texto\" : \"Problemas com saneamento básico\",\r\n    \"usuario\" : {\r\n        \"id\" : 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Deletar Postagem",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/postagem/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tema",
+			"item": [
+				{
+					"name": "01 - Consultar Todos os Temas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/tema",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Consultar Tema por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/tema/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Consultar Tema por Título",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/tema/titulo/esgoto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema",
+								"titulo",
+								"esgoto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Cadastrar Tema",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\" : \"Esgoto\",\r\n    \"descricao\" : \"Problemas com saneamento básico em São Paulo\",\r\n    \"palavra_chave\" : \"saneamento\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/tema",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Editar Tema",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : \"1\",\r\n    \"titulo\" : \"Esgoto\",\r\n    \"descricao\" : \"Problemas com saneamento básico na Zona Sul de São Paulo\",\r\n    \"palavra_chave\" : \"saneamento\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/tema",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Deletar Tema",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VzdGF2b3RhcXVlczExQGdtYWlsLmNvbToxMjM0NTY3ODk=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/tema/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
