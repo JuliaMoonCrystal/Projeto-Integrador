@@ -1,10 +1,9 @@
-.Card{
-    background: rgb(159,214,151)!important;
-    background: radial-gradient(circle, rgba(159,214,151,1) 42%, rgb(102, 129, 102) 79%);
+.cursor{
+    cursor: pointer;
+    color: white;
 }
 
-.btnLogin{
-    background: rgb(159,214,151) !important;
-    background: radial-gradient(circle, rgba(159,214,151,1) 42%, rgb(102, 129, 102) 79%);
-
+.text-decorator-none{
+    text-decoration: none;
 }
+
