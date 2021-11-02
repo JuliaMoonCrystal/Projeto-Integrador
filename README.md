@@ -17,6 +17,19 @@ Projeto final do bootcamp da Generation Brasil, que tem como objetivo mostrar a 
   
 ### Front-end
 - Em contrução.....(❁´◡`❁)
+
+## 🌐Technologies
+
+<p align="center">
+   
+</p>
+
+- [ReactJS](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Java](https://www.java.com/pt-BR/)
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [MySQL](https://www.mysql.com/)
+
   
 ## Autores
 
