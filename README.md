@@ -20,7 +20,7 @@ Projeto final do bootcamp da Generation Brasil, que tem como objetivo mostrar a 
 
 ## 🌐Technologies
 
-<p align="center">
+<p align="center" >
    
 </p>
 
