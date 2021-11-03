@@ -1,0 +1,11 @@
+.fundo{
+    background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p1/1268945-derramar-agua-nas-maos-gr%C3%A1tis-foto.jpg);
+    background-color: brown!important;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+
