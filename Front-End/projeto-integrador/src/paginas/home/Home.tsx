@@ -1,12 +1,15 @@
+import { Box } from '@mui/system'
 import React from 'react'
-import { Typography, Box, Grid, Button } from '@material-ui/core';
-import './Home.css';
-import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
 
 
 function Home() {
     return (
         <div>
+
+  
+
             <Grid container>
                 <Grid xs={12} className="fundo">
                     <Box>
@@ -94,8 +97,8 @@ function Home() {
 
         </div>
 
-
+      
     )
 }
 
-export default Home;
+export default Home

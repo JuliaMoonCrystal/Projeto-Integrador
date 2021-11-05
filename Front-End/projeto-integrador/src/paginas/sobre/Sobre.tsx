@@ -1,11 +1,11 @@
 import React from 'react'
-import { Box, Grid, Typography } from "@material-ui/core";
+import { Card, Grid,TextField,Typography  } from '@mui/material';
 import './Sobre.css';
 
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Box } from '@mui/system';
+import { CardContent, CardMedia } from '@material-ui/core';
 
 function Sobre() {
     return (
