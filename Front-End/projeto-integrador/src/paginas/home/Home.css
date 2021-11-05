@@ -1,6 +1,5 @@
 .fundo{
     background-image: url(https://acegif.com/wp-content/gifs/water-43.gif);
-    background-color: brown!important;
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
@@ -9,5 +8,11 @@
 }
 
 .fonteHome2{
-    font-family: 'Codystar', sans-serif!important;
+    font-family: 'The Girl Next Door', sans-serif!important;
+    font-weight: bolder!important;
+    font-size: 30px!important;
+}
+
+.fontHome1{
+    font-family: '', sans-serif;
 }
