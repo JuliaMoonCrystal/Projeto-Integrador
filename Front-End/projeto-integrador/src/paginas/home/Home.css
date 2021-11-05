@@ -1,5 +1,5 @@
 .fundo{
-    background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p1/1268945-derramar-agua-nas-maos-gr%C3%A1tis-foto.jpg);
+    background-image: url(https://acegif.com/wp-content/gifs/water-43.gif);
     background-color: brown!important;
     background-repeat: no-repeat;
     position: relative;
@@ -8,4 +8,6 @@
     background-size: cover;
 }
 
-
+.fonteHome2{
+    font-family: 'Codystar', sans-serif!important;
+}

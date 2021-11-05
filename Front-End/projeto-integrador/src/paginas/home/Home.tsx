@@ -2,6 +2,7 @@ import { Box } from '@mui/system'
 import React from 'react'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
+import './Home.css';
 
 
 function Home() {
@@ -13,9 +14,9 @@ function Home() {
             <Grid container>
                 <Grid xs={12} className="fundo">
                     <Box>
-                        <Typography padding={12} variant="h5" align="center" style={{color: "#5E633B"}} >Vida com sustentabilidade, renovação e qualidade do saneamento básico</Typography>
+                        <Typography className='fonteHome2' padding={12} variant="h5" align="center" style={{color: "#27828C"}} >Vida com sustentabilidade, renovação e qualidade do saneamento básico</Typography>
                         
-                        <Typography padding={2} variant="h1" gutterBottom color="#454742" component="h1" align="center" style={{ color: "primary" }}>ACÁCIA</Typography>
+                        <Typography padding={2} variant="h1" gutterBottom color="#011C26" component="h1" align="center" style={{ color: "primary" }}>ACÁCIA</Typography>
                     </Box>
                 </Grid>
             </Grid>
