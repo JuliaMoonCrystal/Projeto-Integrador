@@ -6,6 +6,7 @@ import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import Sobre from './paginas/sobre/Sobre';
 import './App.css';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 function App() {
   return (
@@ -29,6 +30,11 @@ function App() {
             <Route path='/sobre'>
               <Sobre />
             </Route>
+
+            <Route path='/cadastrar'>
+              <CadastroUsuario />
+            </Route>
+
           </div>
         </Switch>
       <Footer />

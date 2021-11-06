@@ -1,18 +1,22 @@
+import { Box } from '@mui/system'
 import React from 'react'
-import { Typography, Box, Grid, Button } from '@material-ui/core';
+import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
 import './Home.css';
-import Container from '@mui/material/Container'
 
 
 function Home() {
     return (
         <div>
+
+  
+
             <Grid container>
                 <Grid xs={12} className="fundo">
                     <Box>
-                        <Typography padding={12} variant="h5" align="center" style={{color: "#5E633B"}} >Vida com sustentabilidade, renovação e qualidade do saneamento básico</Typography>
+                        <Typography className='fonteHome2' padding={12} variant="h5"  >Vida com sustentabilidade, renovação e qualidade do saneamento básico</Typography>
                         
-                        <Typography padding={2} variant="h1" gutterBottom color="#454742" component="h1" align="center" style={{ color: "primary" }}>ACÁCIA</Typography>
+                        <Typography className='fontHome1' padding={2} variant="h1" component="h1">ACÁCIA</Typography>
                     </Box>
                 </Grid>
             </Grid>
@@ -21,17 +25,17 @@ function Home() {
                 <Grid container>
                     <Grid xs={6}>
                         <Box padding={2}>
-                            <Typography variant="h5" padding={2} justifyContent="flex-start" alignItems="justify" style={{borderColor: "white", backgroundColor: "#62935B", color: "white"}}> • PROJETO ACÁCIA</Typography>
+                            <Typography className='titulo1' variant="h5" padding={2} justifyContent="flex-start"> • PROJETO ACÁCIA</Typography>
 
-                            <Typography variant="h6" padding={2} component="h5" justifyContent="flex-start" >O Projeto Acácia é uma rede social que tem o objetivo de ajudar locais que não tenham tratamento de esgoto e água encanada, ou seja, saneamento básico, já que é um assunto de interesse global que atinge diretamente a vida de todas as pessoas.Onde o maior objetivo é levar o tratamento de esgoto para que possam tratar a água para que seja reutilizada adequadamente para que não haja desperdício. Assegurar a disponibilidade e a gestão sustentável da água e saneamento para todos. </Typography>
+                            <Typography className='text1' variant="h6" padding={2} component="h5" justifyContent="flex-start" >O Projeto Acácia é uma rede social que tem o objetivo de ajudar locais que não tenham tratamento de esgoto e água encanada, ou seja, saneamento básico, já que é um assunto de interesse global que atinge diretamente a vida de todas as pessoas.Onde o maior objetivo é levar o tratamento de esgoto para que possam tratar a água para que seja reutilizada adequadamente para que não haja desperdício. Assegurar a disponibilidade e a gestão sustentável da água e saneamento para todos. </Typography>
 
-                            <img src="https://scontent.fcgh43-1.fna.fbcdn.net/v/t39.30808-6/252694777_4271275459668746_2660952814401619733_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEQ6QYjPSrQf7SsXpWSfqbo2uCpihjl5Hba4KmKGOXkdlhjHmawq_n0x1MauBo_LVzMd5zN1I32tfItcy4FtW0P&_nc_ohc=f9vBY_stUoEAX9ApIss&_nc_ht=scontent.fcgh43-1.fna&oh=8ae50fa03bf2bbc07c35b78379b68b6e&oe=61875FDB"  alt="Imagem em desenho da árvore acácia"/>
+                            <img src="https://i.imgur.com/pu1piPx.png" alt="Imagem em desenho da árvore acácia" width="300vh" height="270vh"/>
                         </Box>
                     </Grid>
 
-                    <Grid xs={6} padding={2}>
+                    <Grid xs={6} >
                         <Box padding={2}>
-                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" width="675vh" height="700vh"/>
+                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" className="border" width="675vh" height="700vh" />
                         </Box>
                     </Grid>
 
@@ -94,8 +98,8 @@ function Home() {
 
         </div>
 
-
+      
     )
 }
 
-export default Home;
+export default Home
