@@ -11,6 +11,7 @@ import Login from './paginas/login/Login';
 import Sobre from './paginas/sobre/Sobre';
 >>>>>>> 3d9f3153e84d82a21020fd813a3850b87226f813
 import './App.css';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 function App() {
   return (
@@ -39,6 +40,11 @@ function App() {
             <Route path='/sobre'>
               <Sobre />
             </Route>
+
+            <Route path='/cadastrar'>
+              <CadastroUsuario />
+            </Route>
+
           </div>
         </Switch>
       <Footer />

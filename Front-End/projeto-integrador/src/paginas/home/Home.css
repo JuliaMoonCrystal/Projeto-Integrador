@@ -1,0 +1,39 @@
+.fundo{
+    background-image: url(https://acegif.com/wp-content/gifs/water-43.gif);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.fonteHome2{
+    font-family: 'The Girl Next Door', sans-serif!important;
+    font-weight: bolder!important;
+    font-size: 30px!important;
+    text-align: center;
+    color: "#27828C";
+}
+
+.fontHome1{
+    font-family: 'EB Garamond', sans-serif!important;
+    text-align: center;
+    color: "#011C26";
+}
+
+.titulo1{
+    text-align: justify;
+    background-color: #50BFBF;
+    color: white; 
+    border-radius: 20px;  
+    font-family: 'EB Garamond', sans-serif!important;
+}
+
+.text1{
+    font-family: 'Roboto', sans-serif!important;
+    font-size: 20px!important;
+}
+
+.border{
+    border-radius: 10px;
+}
