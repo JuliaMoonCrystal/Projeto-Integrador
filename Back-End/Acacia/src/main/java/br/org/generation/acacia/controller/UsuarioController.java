@@ -32,9 +32,11 @@ public class UsuarioController {
 	}
 	
 	@PostMapping("/cadastrar")
-	public ResponseEntity<Usuario> Post(@RequestBody Usuario usuario){
-		return ResponseEntity.status(HttpStatus.CREATED)
-			.body(usuarioService.CadastrarUsuario(usuario));
+	public ResponseEntity<Usuario> postUsuario(@RequestBody Usuario usuario) {
+		return usuarioService.CadastrarUsuario(usuario)
+			.map(respostaCadastro -> ResponseEntity.status(HttpStatus.CREATED).body(respostaCadastro))
+			.orElse(ResponseEntity.status(HttpStatus.BAD_REQUEST).build());
+
 	}
 	
 	@GetMapping("/all")
