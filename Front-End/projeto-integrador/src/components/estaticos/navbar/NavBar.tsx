@@ -7,14 +7,14 @@ function Navbar() {
     return (
         <>
             <AppBar position="static">
-                <Toolbar variant="dense">
-                    <Box className='cursor' >
+                <Toolbar variant="dense" color="white"> 
+                    <Box className='cursor' padding={3} >
                         <Typography variant="h5" color="inherit">
                             ACACIA
                         </Typography>
                     </Box>
 
-                    <Box display="flex" justifyContent="start">
+                    <Box display="flex" >
                         <Link to="/home">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
@@ -24,21 +24,21 @@ function Navbar() {
                         </Link>
                         
                         <Link to="/sobre">
-                        <Box mx={1} className='cursor'>
+                        <Box mx={1} className='cursor' justifyContent="flex-end">
                             <Typography variant="h6" color="inherit">
-                                Sobre Nós
+                                Sobre nós
                             </Typography>
                         </Box>
                         </Link>
 
-                        <Box mx={1} className='cursor' >
+                        <Box mx={1} className='cursor' justifyContent="flex-end" >
                             <Typography variant="h6" color="inherit">
                                 Contato
                             </Typography>
                         </Box>
 
                         <Link to="/login">
-                        <Box mx={1} className='cursor'>
+                        <Box mx={1} className='cursor' justifyContent="flex-end">
                             <Typography variant="h6" color="inherit">
                                Login
                             </Typography>

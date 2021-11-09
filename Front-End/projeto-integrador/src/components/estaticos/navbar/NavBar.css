@@ -4,6 +4,10 @@
 }
 
 .text-decorator-none{
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: rgb(65, 191, 223)
 }
 
+.navbar{
+    background-color: white;
+}
