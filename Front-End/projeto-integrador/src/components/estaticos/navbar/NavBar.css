@@ -1,34 +1,19 @@
-.cursor{
-    cursor: pointer;
-    color: white;
-}
-
-.text-decorator-none{
-    text-decoration: underline;
-    text-decoration-color: rgb(65, 191, 223)
-}
-
-header{
-    height: 70px;
+.flex{
     display: flex;
-    justify-content: space-between;
-    position: fixed !important;
-    width: 100%;
-    background-color: blue !important;
+    margin-left: auto;
 }
 
-.toolbar{
-    padding-top: 1%;
+.inicio{
+    background-color: white !important;
+    height: 50px;
 }
 
-.tituloNavbar{
-    font-family: 'GREEN NATURE Regular', sans-serif!important;
-    color: lightgreen !important;
-    font-size: 35px !important;
-    padding-right: 10px !important;
+.fontNav1{
+    color: #011C26;
+    text-decoration: none!important;
+    height: 40px;
 }
 
-.menuNavbar{
-    font-family: 'Arial Black', sans-serif!important;
-    font-size: 15px !important;
+h6{
+    font-family: 'EB Garamond', sans-serif!important;
 }
