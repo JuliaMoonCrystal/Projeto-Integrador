@@ -4,54 +4,45 @@ import { Link, useHistory } from "react-router-dom";
 import './NavBar.css';
 import useLocalStorage from 'react-use-localstorage';
 
-    function Navbar() {
+function Navbar() {
     const [token, setToken] = useLocalStorage('token');
     let history = useHistory();
 
     function Lougout() {
         setToken('');
         history.push('/Login');
-        alert('Usuario delogado com sucesso')
+        alert('Usuario deslogado com sucesso')
     }
 
     return (
         <>
-            <AppBar position="static" className="Header">
-                <Toolbar variant="dense" className="toolbar">
-                    <Box className='cursor' >
-                        <Typography className="tituloNavbar" variant="h5" color="inherit">
-                            ACACIA
-                        </Typography>
+            <AppBar position="fixed" className="inicio">
+                <Toolbar >
+                    <Box>
+                        <img src="https://i.imgur.com/pu1piPx.png" alt="Imagem da ávore de acácia" width="40px" />
                     </Box>
 
-                    <Box display="flex" >
-                        <Link to="/home">
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit" className="menuNavbar">
-                                    HOME
-                                </Typography>
+                    <Box className="flex">
+                        <Link to="/home" className="fontNav1">
+                            <Box mx={1} >
+
+                                <Typography variant="h6">Home</Typography>
+
                             </Box>
                         </Link>
 
-                        <Link to="/sobre">
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit" className="menuNavbar">
-                                    SOBRE NÓS
-                                </Typography>
+                        <Link to="/sobre" className="fontNav1">
+                            <Box mx={1} >
+                                <Typography variant="h6">Sobre nós</Typography>
+
+
                             </Box>
                         </Link>
 
-                        <Box mx={1} className='cursor' >
-                            <Typography variant="h6" color="inherit" className="menuNavbar">
-                                CONTATO
-                            </Typography>
-                        </Box>
+                        <Link to="/login" className="fontNav1">
+                            <Box mx={1}  onClick={Lougout}>
+                                <Typography variant="h6" >Logout</Typography>
 
-                        <Link to="/login">
-                            <Box mx={1} className='cursor' onClick={Lougout}>
-                                <Typography variant="h6" color="inherit" className="menuNavbar">
-                                    LOGOUT
-                                </Typography>
                             </Box>
                         </Link>
                     </Box>
