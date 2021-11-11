@@ -35,7 +35,7 @@ function Home() {
 
                     <Grid xs={6} >
                         <Box padding={2}>
-                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" className="border" width="675vh" height="700vh" />
+                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" className="border" width="655vh" height="700vh" />
                         </Box>
                     </Grid>
 
@@ -44,53 +44,25 @@ function Home() {
 
             <div>
                 <Grid container direction="row" justifyContent="space-between">
-                    <Grid xs={4}>
+                    <Grid xs={12}>
                         <Box padding={2}>
-                            <Typography variant="h5" padding={2} >Tratamento de esgoto</Typography>
-
-                            <img src="https://cdn-icons-png.flaticon.com/512/1272/1272590.png" alt="Icone de esgoto" width="250vh" height="250vh"/>
+                            
+                            <img src="https://i.imgur.com/Ku2gsRh.png" alt="Icone de esgoto" width="100%" className="border2"/>
                         </Box>
                     </Grid>
-
-                    <Grid xs={4}>
-                        <Box padding={5}>
-                            <Typography variant="h5">Água encanada</Typography>
-
-                            <img src="https://cdn-icons.flaticon.com/png/512/5211/premium/5211314.png?token=exp=1635896441~hmac=eb299887fe14f919c31be1b7d4a15629" alt="Icone de água" width="250vh" height="250vh" />
-                        </Box>
-                    </Grid>
-
-                    <Grid xs={4}>
-                        <Box padding={2}>
-                        <Typography variant="h5" padding={2} >Saneamento básico</Typography>
-
-                        <img src="https://scontent.fcgh43-1.fna.fbcdn.net/v/t39.30808-6/s720x720/252318700_4271548252974800_698931119949209231_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeHWFXfN1DGec0GSi9N5lADoUSLvLRZQNjRRIu8tFlA2NMXihNKOz84yFrK-602KecA690dU2xLGUbAXzgUHd6YV&_nc_ohc=NBdZ37tY2MsAX8XQIMv&_nc_ht=scontent.fcgh43-1.fna&oh=f2d3f1af8e90e1b784db6d32f549b5d6&oe=6186C612" alt="   icone de saneamento básico" width="250vh" height="250vh" />
-                        </Box>
-                    </Grid>
-
                 
                </Grid>
             </div>
 
-            <div className='Um texto sobre porcentagem da população que nao tem saneamento basico, uma foto no meio e o resto do resto para fica interativo'>
+            <div className='Um carrosel com informações sobre saneamento básico'>
                 <Grid container>
-                    <Grid xs={4}>
+                    <Grid xs={12}>
                         <Box>
-                            <Typography>Começo do texto da porcentagem do sanemanto basico</Typography>
+                            <Typography>Carrosel</Typography>
                         </Box>
                     </Grid>
 
-                    <Grid xs={4}>
-                        <Box>
-                            <img src="" alt="Foto de uma tabela ou algo assim" />
-                        </Box>
-                    </Grid>
-
-                    <Grid xs={4}>
-                        <Box>
-                        <Typography>REsto do texto para ficar interativo</Typography>
-                        </Box>
-                    </Grid>
+                   
 
                 </Grid>
 

@@ -19,15 +19,15 @@
 .fontHome1{
     font-family: 'GREEN NATURE Regular', sans-serif!important;
     text-align: center;
-    color: green;
-    font-size: 150px!important;
+    color: "#011C26";
+    text-shadow: 3px 3px 3px white ;
 }
 
 .titulo1{
     text-align: justify;
     background-color: #50BFBF;
     color: white; 
-    border-radius: 20px;  
+    border-radius: 5px;  
     font-family: 'EB Garamond', sans-serif!important;
 }
 
@@ -37,5 +37,9 @@
 }
 
 .border{
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+.border2{
+    border-radius: 20px;
 }
