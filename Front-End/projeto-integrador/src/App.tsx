@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/estaticos/navbar/NavBar';
 import Footer from './components/estaticos/footer/Footer';
@@ -9,8 +9,24 @@ import './App.css';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 function App() {
+
+  const [ativaCor, setAtivaCor] = useState(false);
+
+  useEffect(function(){
+    function posicaoScroll(){
+        if(window.scrollY > 10){
+          setAtivaCor(true);
+        } else {
+          setAtivaCor(false);
+        }
+    }
+
+    window.addEventListener('scroll', posicaoScroll);
+  }, []);
+
   return (
     <Router>
+      {/* acao={ativaCor} */}
       <Navbar />
         <Switch>
           <div style={{minHeight: '100vh'}}>

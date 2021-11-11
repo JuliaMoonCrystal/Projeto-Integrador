@@ -1,7 +1,7 @@
-import { Box } from '@mui/system'
-import React from 'react'
-import Typography from '@mui/material/Typography'
-import Grid from '@mui/material/Grid'
+import { Box } from '@mui/system';
+import React from 'react';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import './Home.css';
 
 
@@ -11,7 +11,7 @@ function Home() {
 
   
 
-            <Grid container>
+            <Grid container >
                 <Grid xs={12} className="fundo">
                     <Box>
                         <Typography className='fonteHome2' padding={12} variant="h5"  >Vida com sustentabilidade, renovação e qualidade do saneamento básico</Typography>
