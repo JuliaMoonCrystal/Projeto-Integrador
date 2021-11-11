@@ -59,7 +59,7 @@ return (
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
                         </Box>
-                        <Link to='/cadastrousuario'>
+                        <Link to='/cadastrar'>
                             <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
                         </Link>
 

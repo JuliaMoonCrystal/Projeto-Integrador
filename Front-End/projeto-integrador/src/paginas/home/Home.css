@@ -1,6 +1,7 @@
 .fundo{
-    background-image: url(https://acegif.com/wp-content/gifs/water-43.gif);
+    background-image: url(https://www.cc-institute.org/wp-content/themes/cci/assets/img/background-river.gif);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -16,9 +17,10 @@
 }
 
 .fontHome1{
-    font-family: 'EB Garamond', sans-serif!important;
+    font-family: 'GREEN NATURE Regular', sans-serif!important;
     text-align: center;
-    color: "#011C26";
+    color: green;
+    font-size: 150px!important;
 }
 
 .titulo1{
