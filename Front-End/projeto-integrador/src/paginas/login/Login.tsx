@@ -62,16 +62,17 @@ return (
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
                         </Box>
-                        <Link to='/cadastrousuario'>
+                        <Link to='/cadastrar'>
                             <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
                         </Link>
 
                     </Box>
                 </Box>
             </Grid>
-            <Grid xs={6} className='imagem'>
-
-            </Grid>
+            <Grid item xs={6} style={{
+                    backgroundImage: `url(https://blabto.com/img1/robiniyailiakatsiyabelogotsvetaposadkaiu_21145A5B.jpg)`,
+                    backgroundRepeat: 'no-repeat', width: '100vh', minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center'
+                }}></Grid>
         </Grid>
     );
 }

@@ -16,8 +16,8 @@ function Navbar() {
 
     return (
         <>
-            <AppBar position="static">
-                <Toolbar variant="dense" color="white"> 
+            <AppBar position="static" >
+                <Toolbar variant="dense" color="red"> 
                     <Box className='cursor' padding={3} >
                         <Typography variant="h5" color="inherit">
                             ACACIA
