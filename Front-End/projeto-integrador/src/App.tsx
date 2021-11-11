@@ -8,6 +8,7 @@ import Sobre from './paginas/sobre/Sobre';
 import './App.css';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
+import ListaTema from './components/temas/listaTema/ListaTema';
 
 function App() {
 
@@ -54,6 +55,10 @@ function App() {
 
             <Route exact path='/formularioTema'>
               <CadastroTema />
+            </Route>
+
+            <Route exact path='/tema'>
+              <ListaTema />
             </Route>
 
           </div>
