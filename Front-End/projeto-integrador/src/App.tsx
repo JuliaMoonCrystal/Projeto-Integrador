@@ -7,6 +7,8 @@ import Login from './paginas/login/Login';
 import Sobre from './paginas/sobre/Sobre';
 import './App.css';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
+import ListaTema from './components/temas/listaTema/ListaTema';
+
 
 function App() {
 
@@ -50,6 +52,12 @@ function App() {
             <Route path='/cadastrar'>
               <CadastroUsuario />
             </Route>
+
+            <Route path='/tema'>
+              < ListaTema />
+            </Route>
+
+
 
           </div>
         </Switch>

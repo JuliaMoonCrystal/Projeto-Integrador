@@ -41,6 +41,15 @@ import useLocalStorage from 'react-use-localstorage';
                             </Box>
                         </Link>
 
+                        
+                        <Link to="/tema">
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" color="inherit" className="menuNavbar">
+                                    LISTAR TEMAS
+                                </Typography>
+                            </Box>
+                        </Link>
+
                         <Box mx={1} className='cursor' >
                             <Typography variant="h6" color="inherit" className="menuNavbar">
                                 CONTATO
