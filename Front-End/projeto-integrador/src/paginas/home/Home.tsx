@@ -16,7 +16,7 @@ function Home() {
                     <Box>
                         <Typography className='fonteHome2' padding={12} variant="h5"  >Vida com sustentabilidade, renovação e qualidade do saneamento básico</Typography>
                         
-                        <Typography className='fontHome1' padding={2} variant="h1" component="h1">ACÁ CIA</Typography>
+                        <Typography className='fontHome1' padding={2} variant="h1" component="h1">ACÁCIA</Typography>
                     </Box>
                 </Grid>
             </Grid>
@@ -35,7 +35,7 @@ function Home() {
 
                     <Grid xs={6} >
                         <Box padding={2}>
-                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" className="border" width="655vh" height="700vh" />
+                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" className="border" width="520px" height="700vh" />
                         </Box>
                     </Grid>
 
