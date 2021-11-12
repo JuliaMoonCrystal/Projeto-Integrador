@@ -95,10 +95,10 @@ function CadastroTema() {
                             </Button>
                         </form>
                     </Container>
-                    </CardContent>
-                        </Card>
-                </div>
-                )
+                </CardContent>
+            </Card>
+        </div>
+    )
 }
 
                 export default CadastroTema

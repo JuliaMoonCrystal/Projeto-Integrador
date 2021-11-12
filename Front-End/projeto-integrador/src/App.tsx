@@ -8,6 +8,10 @@ import Sobre from './paginas/sobre/Sobre';
 import './App.css';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
+import ListaTema from './components/temas/listaTema/ListaTema';
+import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
+import CadastroPostagem from './components/postagens/cadastroPostagem/CadastroPostagem';
+
 
 function App() {
 
@@ -55,6 +59,20 @@ function App() {
             <Route exact path='/formularioTema'>
               <CadastroTema />
             </Route>
+
+            <Route exact path='/formularioPostagem'>
+              <CadastroPostagem />
+            </Route>
+
+            <Route path='/tema'>
+              <ListaTema />
+            </Route>
+
+            <Route path='/posts'>
+              <ListaPostagem />
+            </Route>
+
+
 
           </div>
         </Switch>

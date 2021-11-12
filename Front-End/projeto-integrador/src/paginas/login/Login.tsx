@@ -31,18 +31,16 @@ function Login() {
             history.push('/home')
         }
     }, [token])
-    
-    async function onSubmit(e: ChangeEvent<HTMLFormElement>){
+    async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
-        try{
-            await login(`/usuarios/logar`, userLogin, setToken)
+        try {
+            await login('/usuarios/logar', userLogin, setToken)
 
             alert('Usuário logado com sucesso!');
-        }catch(error){
+        } catch (error) {
             alert('Dados do usuário inconsistentes. Erro ao logar!');
         }
     }
-    
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
             <Grid alignItems='center' xs={6}>
@@ -53,18 +51,19 @@ function Login() {
                         <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
 
                         <Box marginTop={2} textAlign='center'>
-                           
-                                <Button type='submit' variant='contained' color='primary'>
-                                    Login
-                               </Button>
+                            <Button type='submit' variant='contained' color='primary'>
+                                Login
+                            </Button>
+
                         </Box>
+
                     </form>
                     <Box display='flex' justifyContent='center' marginTop={2}>
                         <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
+                            <Typography gutterBottom align='center' className='link'>Não tem uma conta?</Typography>
                         </Box>
-                        <Link to='/cadastrar'>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
+                        <Link to='/cadastrar' className='link'>
+                            <Typography gutterBottom align='center' className='link2'>Cadastre-se</Typography>
                         </Link>
 
                     </Box>
