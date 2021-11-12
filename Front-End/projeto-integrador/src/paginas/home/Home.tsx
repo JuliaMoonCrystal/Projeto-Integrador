@@ -31,7 +31,7 @@ function Home() {
 
                     <Grid xs={6} >
                         <Box padding={2}>
-                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" className="border" width="520px" height="700vh" />
+                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" className="border" width="100%" height="700vh" />
                         </Box>
                     </Grid>
 
