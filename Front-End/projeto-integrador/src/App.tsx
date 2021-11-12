@@ -13,6 +13,7 @@ import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 import CadastroPostagem from './components/postagens/cadastroPostagem/CadastroPostagem';
 
 
+
 function App() {
 
   const [ativaCor, setAtivaCor] = useState(false);
