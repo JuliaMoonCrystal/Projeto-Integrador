@@ -54,14 +54,16 @@ function Login() {
                             <Button type='submit' variant='contained' color='primary'>
                                 Login
                             </Button>
+
                         </Box>
+
                     </form>
                     <Box display='flex' justifyContent='center' marginTop={2}>
                         <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
+                            <Typography gutterBottom align='center' className='link'>Não tem uma conta?</Typography>
                         </Box>
-                        <Link to='/cadastrar'>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
+                        <Link to='/cadastrar' className='link'>
+                            <Typography gutterBottom align='center' className='link2'>Cadastre-se</Typography>
                         </Link>
 
                     </Box>
