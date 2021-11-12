@@ -1,10 +1,23 @@
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import './Home.css';
+import { useHistory } from 'react-router';
+import useLocalStorage from 'react-use-localstorage';
 
 function Home() {
+    
+    let history = useHistory();
+    const [token, setToken] = useLocalStorage('token');
+    
+    useEffect(() => {
+      if (token == "") {
+          alert("Você precisa estar logado")
+          history.push("/login")
+  
+      }
+  }, [token])
     return (
         <div>
             <Grid container >

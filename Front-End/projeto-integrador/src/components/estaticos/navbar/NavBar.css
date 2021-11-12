@@ -1,6 +1,6 @@
 .flex{
     display: flex;
-    margin-left: auto;
+    margin-left: auto!important;
 }
 
 .inicio{
@@ -16,4 +16,13 @@
 
 h6{
     font-family: 'EB Garamond', sans-serif!important;
+}
+
+.icon{
+    color: black;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+    color: black;
 }
