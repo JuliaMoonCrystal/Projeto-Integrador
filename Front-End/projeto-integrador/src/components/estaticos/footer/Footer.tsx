@@ -3,30 +3,31 @@ import  GitHubIncon  from "@material-ui/icons/GitHub";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { border, margin } from "@mui/system";
 import React from "react";
+import './Footer.css';
 
 function Footer() {
     return(
       <>
-      <Grid container direction="row" justifyContent="center" alignItems="center">
-                <Grid alignItems="center" item xs={12}>
-                    <Box style={{ backgroundColor: "blue", height: "90px" ,padding : '5px'}}>
-                        <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h5" align="center" gutterBottom style={{ color: "white" }}>
-                            Veja o código do nosso projeto </Typography>
-                        </Box>
-                        <Box display="flex" alignItems="center" justifyContent="center">
+      <Grid container>
+                <Grid xs={12}>
+                    <Box className="background">
+                        <Box  className="fontFooter1">
 
-                            <a href="https://github.com/Guzius/Projeto-Integrador" target="_blank">
-                                <GitHubIncon style={{ fontSize: 50, color: "white" }} />
+                        <a href="https://github.com/JuliaMoonCrystal/Projeto-Integrador" target="_blank">
+                                <GitHubIncon style={{ fontSize: 50, color: "black",}} />
                             </a>
+
+                            <Typography variant="h5">Veja nosso código</Typography>
+                            
                         </Box>
-                    </Box>
-                    <Box style={{ backgroundColor: "blue", height: "60px" }}>
+
                         <Box paddingTop={3}>
-                            <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "white" }} >
+                            <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "black" }} >
                             © 2021 Copyright</Typography>
                         </Box>
+
                     </Box>
+                    
                 </Grid>
             </Grid>
       </>
