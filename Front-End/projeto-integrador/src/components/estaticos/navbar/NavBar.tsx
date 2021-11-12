@@ -54,6 +54,15 @@ import useLocalStorage from 'react-use-localstorage';
                                 </Typography>
                             </Box>
                         </Link>
+
+                        <Link to={'/formularioTema'}>
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" color="inherit" className="menuNavbar">
+                                    CADASTRAR TEMA
+                                </Typography>
+                            </Box>
+                        </Link>
+
                     </Box>
 
                 </Toolbar>
