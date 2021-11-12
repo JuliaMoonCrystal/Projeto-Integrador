@@ -8,3 +8,12 @@
     background: radial-gradient(circle, rgba(159,214,151,1) 42%, rgb(102, 129, 102) 79%);
 
 }
+
+.link{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none!important;
+}
+
+.link .link2{
+    color: blue;
+}

@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Card, Grid,TextField,Typography  } from '@mui/material';
 import './Sobre.css';
-
-
+import { useHistory } from 'react-router';
+import useLocalStorage from 'react-use-localstorage';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { Box } from '@mui/system';
 import { CardContent, CardMedia } from '@material-ui/core';
 
 function Sobre() {
+
+    let history = useHistory();
+    const [token, setToken] = useLocalStorage('token');
+    
+    useEffect(() => {
+      if (token == "") {
+          alert("Você precisa estar logado")
+          history.push("/login")
+  
+      }
+  }, [token])
+
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center">
