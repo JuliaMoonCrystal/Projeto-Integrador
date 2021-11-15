@@ -12,6 +12,7 @@ function Login() {
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
             id: 0,
+            nome: '',
             usuario: '',
             senha: '',
             token: ''
@@ -31,11 +32,11 @@ function Login() {
             history.push('/home')
         }
     }, [token])
+
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
         try {
             await login('/usuarios/logar', userLogin, setToken)
-
             alert('Usuário logado com sucesso!');
         } catch (error) {
             alert('Dados do usuário inconsistentes. Erro ao logar!');
