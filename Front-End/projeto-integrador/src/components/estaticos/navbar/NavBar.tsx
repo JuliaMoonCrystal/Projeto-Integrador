@@ -39,26 +39,9 @@ function Navbar() {
                             </Box>
                         </Link>
 
-<<<<<<< HEAD
-                        
-                        <Link to="/tema">
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit" className="menuNavbar">
-                                    LISTAR TEMAS
-                                </Typography>
-                            </Box>
-                        </Link>
-
-                        <Box mx={1} className='cursor' >
-                            <Typography variant="h6" color="inherit" className="menuNavbar">
-                                CONTATO
-                            </Typography>
-                        </Box>
-=======
                         <Link to="/login" className="fontNav1">
                             <Box mx={1}  onClick={Lougout}>
                                 <Typography variant="h6" >Logout</Typography>
->>>>>>> 3c7943a65c22e181425f4f1a421885d11a65de28
 
                             </Box>
                         </Link>
