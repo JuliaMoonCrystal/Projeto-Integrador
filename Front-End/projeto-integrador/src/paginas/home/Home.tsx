@@ -4,7 +4,9 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import './Home.css';
 import { useHistory } from 'react-router';
+import CarouselComponent from '../../components/carrossel/CarrosselComponent';
 import useLocalStorage from 'react-use-localstorage';
+import { Button } from '@material-ui/core';
 
 function Home() {
     
@@ -63,15 +65,16 @@ function Home() {
             </div>
 
             <div className='Um carrosel com informações sobre saneamento básico'>
-                <Grid container>
-                    <Grid xs={12}>
-                        <Box>
-                            <Typography>Carrosel</Typography>
-                        </Box>
-                    </Grid>
+            <Grid container direction="row" justifyContent="center" alignItems="center"  className='border3'>
+               
+                <Grid xs={12} >
+                   
+                    <Box marginTop={2} padding={2} >
+                        <CarouselComponent />
+                    </Box>
 
                 </Grid>
-
+            </Grid>
             </div>
 
         </div>
