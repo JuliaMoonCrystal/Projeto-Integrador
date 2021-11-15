@@ -1,10 +1,23 @@
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import './Home.css';
+import { useHistory } from 'react-router';
+import useLocalStorage from 'react-use-localstorage';
 
 function Home() {
+    
+    let history = useHistory();
+    const [token, setToken] = useLocalStorage('token');
+    
+    useEffect(() => {
+      if (token == "") {
+          alert("Você precisa estar logado")
+          history.push("/login")
+  
+      }
+  }, [token])
     return (
         <div>
             <Grid container >
@@ -31,7 +44,7 @@ function Home() {
 
                     <Grid xs={6} >
                         <Box padding={2}>
-                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" className="border" width="520px" height="700vh" />
+                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" className="border" width="100%" height="700vh" />
                         </Box>
                     </Grid>
 
