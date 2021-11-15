@@ -1,10 +1,10 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
-import { Link, useHistory } from 'react-router-dom';
 import useLocalStorage from "react-use-localstorage";
 import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
 import './Login.css';
+import { Link, useHistory } from 'react-router-dom';
 
 function Login() {
     let history = useHistory();
@@ -36,8 +36,9 @@ function Login() {
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
         try {
-            await login('/usuarios/logar', userLogin, setToken)
+            await login(`/usuarios/logar`, userLogin, setToken)
             alert('Usuário logado com sucesso!');
+
         } catch (error) {
             alert('Dados do usuário inconsistentes. Erro ao logar!');
         }
