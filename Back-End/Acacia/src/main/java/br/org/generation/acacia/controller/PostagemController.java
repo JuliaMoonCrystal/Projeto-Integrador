@@ -23,16 +23,16 @@ import br.org.generation.acacia.repository.PostagemRepository;
 public class PostagemController {
       
 	@Autowired
-	private PostagemRepository postagemPepository;
+	private PostagemRepository postagemRepository;
 	
 	@GetMapping
 	public ResponseEntity<List<Postagem>> getAll(){
-		return ResponseEntity.ok(postagemPepository.findAll());	
+		return ResponseEntity.ok(postagemRepository.findAll());	
 	}
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<Postagem> getById(@PathVariable long id){
-		return postagemPepository.findById(id)
+		return postagemRepository.findById(id)
 				.map(resposta -> ResponseEntity.ok().body(resposta))
 				.orElse(ResponseEntity.notFound().build());
 		
@@ -40,22 +40,22 @@ public class PostagemController {
 	
 	@GetMapping("/titulo/{titulo}")
 	public ResponseEntity<List<Postagem>> getByTitulo(@PathVariable String titulo){
-		return ResponseEntity.ok(postagemPepository.findAllByTituloContainingIgnoreCase(titulo));	
+		return ResponseEntity.ok(postagemRepository.findAllByTituloContainingIgnoreCase(titulo));	
 	}
 	
 	@PostMapping
 	public ResponseEntity<Postagem> postPostagem(@RequestBody Postagem postagem){
-		return ResponseEntity.status(HttpStatus.CREATED).body(postagemPepository.save(postagem));
+		return ResponseEntity.status(HttpStatus.CREATED).body(postagemRepository.save(postagem));
 	}
 	
 	@PutMapping
 	public ResponseEntity<Postagem> putPostagem(@RequestBody Postagem postagem){
-		return ResponseEntity.status(HttpStatus.OK).body(postagemPepository.save(postagem));		
+		return ResponseEntity.status(HttpStatus.OK).body(postagemRepository.save(postagem));		
 	}
 	
 	@DeleteMapping("/{id}")
 	public void deletePotagem(@PathVariable long id) {
-		postagemPepository.deleteById(id);
+		postagemRepository.deleteById(id);
 	}
 	
 }
