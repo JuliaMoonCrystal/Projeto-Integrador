@@ -32,12 +32,10 @@ public class Usuario {
 	
 	@ApiModelProperty(example = "email@email.com.br")
 	@NotNull(message = "O usuário é obrigatório")
-	@NotBlank
 	@Email
 	private String usuario;
 	
-	@NotNull(message = "A senha é obrigatória")
-	@NotBlank
+	@NotBlank(message = "A senha é obrigatória")
 	@Size(min=8, message = "A senha deve ter no mínimo 8 caracteres")
 	private String senha;
 	

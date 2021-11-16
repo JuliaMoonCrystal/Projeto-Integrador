@@ -36,9 +36,13 @@
 }
 
 .border{
-    border-radius: 5px;
+    border-radius: 5px!important;
 }
 
 .border2{
+    border-radius: 10px;
+}
+.border3{
     border-radius: 20px;
+    box-shadow: red!important;
 }

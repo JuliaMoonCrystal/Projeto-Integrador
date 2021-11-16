@@ -14,17 +14,17 @@ import br.org.generation.acacia.model.Usuario;
 import br.org.generation.acacia.repository.UsuarioRepository;
 
 @Service
-public class UsuarioService {
+public class UsuarioService{
 
 	@Autowired
 	private UsuarioRepository repository;
 	
-	public List<Usuario> listarUsuarios() {
+	public List<Usuario> listarUsuarios(){
 		return repository.findAll();
 	}
 
 	
-	public Optional <Usuario> CadastrarUsuario(Usuario usuario) {
+	public Optional <Usuario> CadastrarUsuario(Usuario usuario){
 		if (repository.findByUsuario(usuario.getUsuario()).isPresent())
             return Optional.empty();
 		
@@ -40,9 +40,9 @@ public class UsuarioService {
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		Optional<Usuario> usuario = repository.findByUsuario(user.get().getUsuario());
 	
-	
-		
+
 		if(usuario.isPresent()) {
+			
 		if(encoder.matches(user.get().getSenha(), usuario.get().getSenha()));{
 			
 			
@@ -50,13 +50,15 @@ public class UsuarioService {
 			byte[] encodedAuth = Base64.encodeBase64(auth.getBytes(Charset.forName("US-ASCII")));
 			String authHeader = "Basic " + new String(encodedAuth);
 			
-			user.get().setToken(authHeader);
+			user.get().setId(usuario.get().getId());
 			user.get().setNome(usuario.get().getNome());
+			user.get().setSenha(usuario.get().getSenha());
+			user.get().setToken(authHeader);
 			
 			return user;
 			}
 		}
 		
-		return null;
+		return Optional.empty();
 	}
 }
