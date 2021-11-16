@@ -26,7 +26,6 @@ function Home() {
                 <Grid xs={12} className="fundo">
                     <Box>
                         <Typography className='fonteHome2' padding={12} variant="h5"  >Vida com sustentabilidade, renovação e qualidade do saneamento básico</Typography>
-
                         <Typography className='fontHome1' padding={2} variant="h1" component="h1">ACÁCIA</Typography>
                     </Box>
                 </Grid>
