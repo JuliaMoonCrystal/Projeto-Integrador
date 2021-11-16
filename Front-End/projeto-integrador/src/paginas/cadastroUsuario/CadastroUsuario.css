@@ -6,3 +6,13 @@
 .btnCancelar{
     margin: 10px!important;
 }
+
+.link{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+    text-decoration: none!important;
+}
+
+.link .link2{
+    color: blue;
+    text-decoration: none!important;
+}

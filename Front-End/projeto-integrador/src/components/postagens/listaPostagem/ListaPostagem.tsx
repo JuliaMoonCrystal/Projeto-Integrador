@@ -61,9 +61,6 @@ function ListaPostagem() {
                 <Typography color="textSecondary" gutterBottom>
                   Postagens
                 </Typography>
-                <Typography color="textSecondary" gutterBottom>
-                  User{User.nome}
-                </Typography>
                 <Typography variant="h5" component="h2">
                   {post.endereco}
                 </Typography>
