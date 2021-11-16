@@ -5,33 +5,41 @@ import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
 import './Login.css';
 import { Link, useHistory } from 'react-router-dom';
+<<<<<<< HEAD
+=======
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/actions';
+import { toast } from 'react-toastify';
+>>>>>>> 9b09f124dde27787152e9953abe4fae8418fc0b4
 
 function Login() {
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
+    const dispatch = useDispatch();
+    const [token, setToken] = useState('');
     const [userLogin, setUserLogin] = useState<UserLogin>(
-        {
-            id: 0,
-            nome: '',
-            usuario: '',
-            senha: '',
-            token: ''
-        }
+      {
+        id: 0,
+        nome: '',
+        senha: '',
+        usuario: '',
+        token: ''
+  
+      }
     )
-
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
-
-        setUserLogin({
-            ...userLogin,
-            [e.target.name]: e.target.value
-        })
+  
+      setUserLogin({
+        ...userLogin,
+        [e.target.name]: e.target.value
+      })
     }
-
     useEffect(() => {
-        if (token != '') {
-            history.push('/home')
-        }
+      if (token !== '') {
+        dispatch(addToken(token));
+        history.push('/Home')
+      }
     }, [token])
+<<<<<<< HEAD
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -41,8 +49,44 @@ function Login() {
 
         } catch (error) {
             alert('Dados do usuário inconsistentes. Erro ao logar!');
+=======
+  
+    async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
+      e.preventDefault();
+      try {
+        await login(`/usuarios/logar`, userLogin, setToken);
+  
+        toast.success('Usuário logado com sucesso',
+        {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+  
+>>>>>>> 9b09f124dde27787152e9953abe4fae8418fc0b4
         }
+    )
+      } catch (error) {
+        toast.error('Dados divergentes',
+        {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+  
+        }
+    )
+      }
     }
+  
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
             <Grid alignItems='center' xs={6}>
