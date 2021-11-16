@@ -104,12 +104,12 @@ function CadastroUsuario() {
                                 </form>
                                 <Box display='flex' justifyContent='center' marginTop={2}>
                                     <Box marginRight={1}>
-                                        <Typography variant='subtitle1' gutterBottom align='center'>Já tem uma conta?</Typography>
+                                        <Typography variant='subtitle1' gutterBottom align='center' className='link'>Já tem uma conta?</Typography>
                                     </Box>
 
-                                    <Link to='/Login' className='text-decorator-none'>
+                                    <Link to='/Login'>
                                         <Box marginRight={1}>
-                                            <Typography variant='subtitle1' gutterBottom align='center' className='cadastre'>Login</Typography>
+                                            <Typography variant='subtitle1' gutterBottom align='center' className='link'>Login</Typography>
                                         </Box>
                                     </Link>
 
