@@ -5,6 +5,42 @@
 
 }
 
-.card {
+.cards{
     padding: 10px;
+    border-radius: 20px;
+}
+
+.font{
+    font-family: 'EB Garamond', sans-serif!important;
+}
+
+.texto{
+    color: black!important;
+    font-family: 'Roboto', sans-serif!important;
+}
+
+.backgound{
+    background-color: #ACF2EB;
+}
+
+.backgound-white{
+    background-color: white;
+    padding:2%;
+}
+
+.border{
+    border-radius: 20px;
+}
+
+.icons{
+    font-size: 30px!important;
+    color: black;
+    padding: 5px;
+
+}
+
+.icons1{
+    font-size: 35px!important;
+    color: black;
+    padding: 5px;
 }
