@@ -26,3 +26,9 @@ h6{
     text-decoration: none;
     color: black;
 }
+
+.menu{
+    font-family: 'EB Garamond', sans-serif!important;
+    color: #011C26;
+    font-size: 20px!important;
+}

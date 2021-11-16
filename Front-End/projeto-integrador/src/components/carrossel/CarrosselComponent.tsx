@@ -4,10 +4,10 @@ import { useState } from 'react'
 
 function CarrosselComponent() {
   const [items, setstate] = useState([
-    {id: 1, title: 'item #1', img:"https://cdn.discordapp.com/attachments/888511226311766018/908076878932348976/agua_encanada.jpg"},
-    {id: 2, title: 'item #2', img:"https://cdn.discordapp.com/attachments/888511226311766018/908076929045909544/Agua_encanada1.jpg"},
-    {id: 3, title: 'item #3', img:"https://cdn.discordapp.com/attachments/888511226311766018/908076959513325608/tratamento_de_esgoto1.jpg"},
-    {id: 4, title: 'item #4', img:"https://cdn.discordapp.com/attachments/888511226311766018/908076988693114880/tratamento_de_esgoto.jpg"}
+    {id: 1, title: 'item #1', img:"https://cdn.discordapp.com/attachments/888511226311766018/910209782143668234/2.png"},
+    {id: 2, title: 'item #2', img:"https://cdn.discordapp.com/attachments/888511226311766018/910209779329282088/1.png"},
+    {id: 3, title: 'item #3', img:"https://cdn.discordapp.com/attachments/888511226311766018/910209788565127258/4.png"},
+    {id: 4, title: 'item #4', img:"https://cdn.discordapp.com/attachments/888511226311766018/910209785796902952/3.png"}
   ])
   return (
 <Carousel isRTL={false} enableAutoPlay autoPlaySpeed={3500}>

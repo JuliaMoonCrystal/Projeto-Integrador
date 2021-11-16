@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Box, Grid } from '@material-ui/core';
 import { Link, useHistory } from "react-router-dom";
 import './NavBar.css';
 import useLocalStorage from 'react-use-localstorage';
@@ -100,26 +100,22 @@ function Navbar() {
                               'aria-labelledby': 'basic-button',
                           }}
                       >
-                          <MenuItem onClick={handleClose}>Minha conta</MenuItem>
+                          
 
                           <Link to={"/posts"} className='text-decorator-none'>
-                              <MenuItem onClick={handleClose}>Ver Postagens</MenuItem>
+                              <MenuItem onClick={handleClose} className="menu"> Postagem</MenuItem>
                           </Link>
 
                           <Link to={"/tema"} className='text-decorator-none'>
-                              <MenuItem onClick={handleClose}>Ver temas</MenuItem>
+                              <MenuItem onClick={handleClose} className="menu">Temas</MenuItem>
                           </Link>
 
                           <Link to={"/formularioPostagem"} className='text-decorator-none'>
-                              <MenuItem onClick={handleClose}>Fazer Postagem</MenuItem>
+                              <MenuItem onClick={handleClose} className="menu">Criar postagem</MenuItem>
                           </Link>
 
                           <Link to={"/formularioTema"} className='text-decorator-none'>
-                              <MenuItem onClick={handleClose}>Adicionar novo tema</MenuItem>
-                          </Link>
-
-                          <Link to={"/login"} className='text-decorator-none'>
-                              <MenuItem onClick={Lougout}>Logout</MenuItem>
+                              <MenuItem onClick={handleClose} className="menu">Criar tema</MenuItem>
                           </Link>
 
                       </Menu>
@@ -127,15 +123,15 @@ function Navbar() {
               </Box>
           </Toolbar>
       </AppBar>
+      
       }
 
     return (
         <>
              {navbarComponent}
+             <Grid className="inicio"> </Grid>
         </>
     )
 }
 
 export default Navbar;
-
-
