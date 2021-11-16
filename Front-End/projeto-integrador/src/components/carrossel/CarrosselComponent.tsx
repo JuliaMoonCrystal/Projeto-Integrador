@@ -14,8 +14,8 @@ function CarrosselComponent() {
 {items.map(item => <div key={item.id}>
 <img src={item.img} alt="" width="1000px" height="550px"/>
 
-</div>)}
-</Carousel>
+      </div>)}
+    </Carousel>
   )
 }
 

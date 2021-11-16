@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/estaticos/navbar/NavBar';
 import Footer from './components/estaticos/footer/Footer';
 import Home from './paginas/home/Home';
-import Login from './paginas/login/Login';
 import Sobre from './paginas/sobre/Sobre';
 import './App.css';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
@@ -18,7 +17,7 @@ import NavBar from './components/estaticos/navbar/NavBar';
 import 'react-toastify/dist/ReactToastify.css';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
-
+import Login from './paginas/login/Login';
 
 
 function App() {
@@ -72,9 +71,9 @@ function App() {
               <ListaPostagem />
             </Route>
 
-            <Route exact path='/formularioPostagem'>
-              <CadastroPostagem />
-            </Route>
+                <Route exact path='/formularioPostagem'>
+                  <CadastroPostagem />
+                </Route>
 
             <Route exact path='/formularioPostagem/:id'>
               <CadastroPostagem />
@@ -97,7 +96,6 @@ function App() {
             </Route>
 
 
-
           </div>
         </Switch>
 
@@ -106,5 +104,7 @@ function App() {
     </Provider>
   );
 }
+
+              
 
 export default App;
