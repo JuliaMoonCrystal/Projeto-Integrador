@@ -1,46 +1,79 @@
+
+   
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
-import { Link, useHistory } from 'react-router-dom';
 import useLocalStorage from "react-use-localstorage";
 import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
 import './Login.css';
+import { Link, useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/actions';
+import { toast } from 'react-toastify';
 
 function Login() {
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
+    const dispatch = useDispatch();
+    const [token, setToken] = useState('');
     const [userLogin, setUserLogin] = useState<UserLogin>(
+      {
+        id: 0,
+        nome: '',
+        senha: '',
+        usuario: '',
+        token: ''
+  
+      }
+    )
+    function updatedModel(e: ChangeEvent<HTMLInputElement>) {
+  
+      setUserLogin({
+        ...userLogin,
+        [e.target.name]: e.target.value
+      })
+    }
+    useEffect(() => {
+      if (token !== '') {
+        dispatch(addToken(token));
+        history.push('/Home')
+      }
+    }, [token])
+  
+    async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
+      e.preventDefault();
+      try {
+        await login(`/usuarios/logar`, userLogin, setToken);
+  
+        toast.success('Usuário logado com sucesso',
         {
-            id: 0,
-            usuario: '',
-            senha: '',
-            token: ''
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+  
         }
     )
-
-    function updatedModel(e: ChangeEvent<HTMLInputElement>) {
-
-        setUserLogin({
-            ...userLogin,
-            [e.target.name]: e.target.value
-        })
-    }
-
-    useEffect(() => {
-        if (token != '') {
-            history.push('/home')
+      } catch (error) {
+        toast.error('Dados divergentes',
+        {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+  
         }
-    }, [token])
-    async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
-        e.preventDefault();
-        try {
-            await login('/usuarios/logar', userLogin, setToken)
-
-            alert('Usuário logado com sucesso!');
-        } catch (error) {
-            alert('Dados do usuário inconsistentes. Erro ao logar!');
-        }
+    )
+      }
     }
+  
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
             <Grid alignItems='center' xs={6}>
@@ -62,7 +95,7 @@ function Login() {
                         <Box marginRight={1}>
                             <Typography gutterBottom align='center' className='link'>Não tem uma conta?</Typography>
                         </Box>
-                        <Link to='/cadastrar' className='link'>
+                        <Link to='/cadastro' className='link'>
                             <Typography gutterBottom align='center' className='link2'>Cadastre-se</Typography>
                         </Link>
 
