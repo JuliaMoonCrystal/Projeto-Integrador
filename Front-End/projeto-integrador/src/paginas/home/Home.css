@@ -41,8 +41,9 @@
 }
 
 .border2{
-    border-radius: 20px;
+    border-radius: 10px;
 }
+
 .border3{
     border-radius: 20px;
     box-shadow: red!important;

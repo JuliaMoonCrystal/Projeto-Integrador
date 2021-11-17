@@ -36,7 +36,6 @@ function Home() {
 
         }
     }, [token])
-
     return (
         <div>
             <Grid container>
