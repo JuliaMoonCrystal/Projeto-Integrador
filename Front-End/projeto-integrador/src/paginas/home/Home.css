@@ -23,31 +23,60 @@
 }
 
 .titulo1{
-    text-align: justify;
-    background-color: #50BFBF;
     color: white; 
-    border-radius: 5px;  
     font-family: 'EB Garamond', sans-serif!important;
+
 }
 
 .text1{
     font-family: 'Roboto', sans-serif!important;
     font-size: 20px!important;
+    text-align: justify;
+    font-weight: bold;
 }
 
 .border{
-    border-radius: 5px!important;
-    background-image: url(https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg);
-    min-height: 670px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-radius: 5px;
+    max-width: 100%;
 }
 
 .border2{
     border-radius: 10px;
 }
+
 .border3{
     border-radius: 20px;
     box-shadow: red!important;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.veja{
+    text-align: right;
+    font-size: 20px!important;
+    color: #50BFBF;
+    font-weight: bold;
+}
+
+.p{
+    padding: 2%;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+    color: #50BFBF;
+}
+
+.cor{
+    background-color: #50BFBF;
+    border-radius: 10px;
+    padding-right: 45%;
+}
+
+.img{
+    max-width: 20vh;
 }

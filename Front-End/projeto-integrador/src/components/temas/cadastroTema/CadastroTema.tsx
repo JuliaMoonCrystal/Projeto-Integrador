@@ -103,7 +103,7 @@ function CadastroTema() {
     back();
   }
   function back() {
-    history.push("/temas");
+    history.push("/tema");
   }
 
   return (
