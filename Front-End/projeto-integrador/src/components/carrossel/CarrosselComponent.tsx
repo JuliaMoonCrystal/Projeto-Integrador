@@ -1,6 +1,6 @@
-import React from 'react'
-import Carousel from 'react-elastic-carousel'
-import { useState } from 'react'
+import React from 'react';
+import Carousel from 'react-elastic-carousel';
+import { useState } from 'react';
 
 function CarrosselComponent() {
   const [items, setstate] = useState([
