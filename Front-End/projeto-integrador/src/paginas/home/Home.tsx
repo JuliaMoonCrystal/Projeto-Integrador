@@ -7,19 +7,36 @@ import { useHistory } from 'react-router';
 import CarouselComponent from '../../components/carrossel/CarrosselComponent';
 import useLocalStorage from 'react-use-localstorage';
 import { Button } from '@material-ui/core';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function Home() {
-    
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
-    
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
+
     useEffect(() => {
-      if (token == "") {
-          alert("Você precisa estar logado")
-          history.push("/login")
-  
-      }
-  }, [token])
+        if (token == "") {
+            toast.error('Você prescisa estar logado',
+                {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+
+                }
+            )
+            history.push("/Login")
+
+        }
+    }, [token])
+    
     return (
         <div>
             <Grid container >
@@ -45,7 +62,8 @@ function Home() {
 
                     <Grid xs={6} >
                         <Box padding={2}>
-                            <img src="https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg" alt="Imagem de uma criança tomando banho de mangueira" className="border" width="100%" height="700vh" />
+                        <div className="border">
+                            </div>
                         </Box>
                     </Grid>
 

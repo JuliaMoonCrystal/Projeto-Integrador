@@ -1,4 +1,4 @@
-<h1 align="center">:hibiscus: Projeto-Integrador</h1>
+<h1 align="center"><img src="https://i.imgur.com/naMlP9S.png" alt="Acácia logo" width="40" > Projeto-Integrador</h1>
 Projeto final do bootcamp que tem como objetivo mostrar a nossa evolução ao decorrer do bootcamp
 
 <img src="https://static3.depositphotos.com/1007115/242/i/950/depositphotos_2429922-stock-photo-acacia-blossom.jpg" alt="Acácia imagem" width="200" heigth= "200">
@@ -16,7 +16,22 @@ Projeto final do bootcamp que tem como objetivo mostrar a nossa evolução ao de
 - [x] Desenvolvimento das camadas de entidade,repository,controller,service,security e test do projeto
   
 ### Front-end
-- Em contrução.....(❁´◡`❁)
+   
+- [x] Criando os componentes do Front-End (- Navbar 
+                                           - Footer
+                                           - Página de Login
+                                           - Página de cadastro
+                                           - Página de Sobre )
+- [x] Ligação do Back com o Front ( Ligação na pagina do Login e do Cadastro )
+- [x] Implementação do consumo HTTP das páginas de postagem e tema ( GET e Post )
+- [x] Implementação do consumo HTTP das páginas de postagem e tema ( Delete e Put )
+   
+   
+ ## :rocket: Futuras Implementações:
+   - Criar opção de alteração de senha 
+   - Criar um email próprio  do PI
+   - Criar uma conta no Instagram
+
   
 ## Autores
 

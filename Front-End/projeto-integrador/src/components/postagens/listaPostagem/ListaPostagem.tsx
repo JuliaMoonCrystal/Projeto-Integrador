@@ -6,15 +6,32 @@ import { Box, Card, CardActions, CardContent, Button, Typography } from '@materi
 import './ListaPostagem.css';
 import useLocalStorage from 'react-use-localstorage';
 import { useHistory } from 'react-router-dom'
+import { toast } from 'react-toastify';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
-  const [token, setToken] = useLocalStorage('token');
   let history = useHistory();
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+  );
 
   useEffect(() => {
     if (token == "") {
-      alert("Você precisa estar logado")
+      toast.error('Voce prescisa estar logado',
+        {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          theme: "colored",
+          progress: undefined,
+
+        }
+      )
       history.push("/login")
 
     }
@@ -39,20 +56,28 @@ function ListaPostagem() {
       {
         posts.map(post => (
           <Box m={2} >
-            <Card variant="outlined">
+            <Card variant="outlined" className='listaPostagem'>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
                   Postagens
                 </Typography>
-                <Typography variant="h5" component="h2">
-                  {post.endereco}
+
+                <Typography variant="h5" component="p">
+                  Titulo : {post.titulo}
                 </Typography>
-                <Typography variant="body2" component="p">
+
+                <Typography variant="h5" component="h2">
+                  Endereço : {post.endereco}
+                </Typography>
+
+                <Typography variant="h5" component="p">
                   {post.texto}
                 </Typography>
-                <Typography variant="body2" component="p">
-                  {post.titulo}
+
+                <Typography variant="h5" component="p">
+                  Tema: {post.tema?.titulo}
                 </Typography>
+
               </CardContent>
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5}>

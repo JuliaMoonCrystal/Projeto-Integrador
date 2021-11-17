@@ -36,11 +36,16 @@
 }
 
 .border{
-    border-radius: 5px;
+    border-radius: 5px!important;
+    background-image: url(https://live.staticflickr.com/3499/5711086244_f28a63f6a9_b.jpg);
+    min-height: 670px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .border2{
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .border3{
     border-radius: 20px;
