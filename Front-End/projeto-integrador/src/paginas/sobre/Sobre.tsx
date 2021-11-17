@@ -43,41 +43,49 @@ function Sobre() {
         <>
             <Grid className="backgound">
 
-                <Grid container direction="row" justifyContent="center" alignItems="center" paddingTop="50px">
+                <Grid container className="sobrenos">
+                    
                     <Box>
-                        <Typography variant="h3" gutterBottom color="black" align="center" className="font">Sobre Nós</Typography>
+                        <Typography variant="h3" gutterBottom  className="font">Sobre nós</Typography>
                     </Box>
                 </Grid>
 
 
-                <Grid container direction="row" justifyContent="center" alignItems="center" className="backgound-white">
-                    <Grid alignItems="center" item xs={6} >
-                        <Box style={{ margin: "50px" }}>
-                            <Typography variant="h4" component="h4" className='texto'>Acacia</Typography>
-                            <Typography variant="h6" component="h6" className='texto'>Nosso propósito</Typography>
+                <Grid container  className="backgound-white">
 
-                            <Typography color="textPrimary" align="center" textAlign="justify" className='texto'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Typography>
+                    <Grid alignItems="center" item xs={6} >
+
+                        <Box style={{ margin: "50px" }}>
+
+                            <Typography variant="h4" className='texto'>• Acácia</Typography>
+
+                            <Typography variant="h5" className='texto'>— Nosso propósito:</Typography>
+
+                            <Typography variant="h6" className='texto2'> No Brasil, 16% das pessoas não têm água tratada e 47% não têm acesso à rede de esgoto, segundo dados do Sistema Nacional de Informações sobre Saneamento (SNIS). São 35 milhões de brasileiros sem recursos hídricos seguros, e 100 milhões precisando usar medidas alternativas para lidar com os dejetos. Os números também têm melhorado ao longo dos anos, mas de forma lenta. Em 2011, 17,6% da população não tinha água tratada, e mais da metade dos brasileiros, o equivalente a 51,9%, não tinha acesso à rede de coleta de esgoto.</Typography>
+
+                            <Typography variant="h6" className='texto2'> Com base nessas informações decidimos criar uma rede social onde pessoas com déficit de saneamento básico possam se cadastrar e nos dizer melhorias que podem ser feitas em sua região, como tratamento de esgot, água encanada e saneamento básico completo. Visando o problema de todo o Brasil nossa rede começará averiguando primeiramente a falta de estrutura de saneamento do estado de São Paulo, onde futuramente implementaremmos aos outros estados.</Typography>
                         </Box>
 
                     </Grid>
                     <Grid item xs={6}>
-                        <img src="https://i.imgur.com/uDLMjiE.png" alt="" className="img" />
+                        <img src="https://i.imgur.com/f0tgH0k.png" alt="" className="img" />
                     </Grid>
                 </Grid>
 
 
 
-                <Grid container direction="row" justifyContent="center" alignItems="center" className="backgound-white" width="90%" margin="auto" marginY="80px" borderRadius="30px" >
+                <Grid container className="backgound-white border2"  marginY="80px"  >
                     <Grid xs={5}>
-                        <img src="https://ods.cr/sites/default/files/item06-deco.png" alt="" className="img" />
+                        <img src="https://ods.cr/sites/default/files/item06-deco.png" alt="" className="img2" />
                     </Grid>
 
                     <Grid xs={5} alignItems="center">
                         <Box >
-                            <Typography variant="h4" component="h4" className='texto'>ODS 6</Typography>
-                            <Typography variant="h6" component="h6" className='texto'>ÁGUA POTÁVEL E SANEAMENTO</Typography>
+                            <Typography variant="h4" component="h4" className='texto'>• ODS 6</Typography>
 
-                            <Typography color="textPrimary" align="center" textAlign="justify" className='texto'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </Typography>
+                            <Typography variant="h5" component="h6" className='texto'>— Água potável e saneamento</Typography>
+
+                            <Typography  variant="h6" className='texto2'> Uma em cada três pessoas no mundo não tem acesso a água potável. O dado alarmante é do relatório do Programa Conjunto de Monitoramento para Progresso na Água Potável, Saneamento e Higiene: 2000-2017 e preocupa justamente porque a água está no centro do desenvolvimento sustentável e das suas três dimensões – ambiental, econômica e social. Por isso, garantir o seu acesso universal e seguro é o sexto item da lista de Objetivos de Desenvolvimento Sustentável das Nações Unidas, para serem cumpridos até o ano de 2030. Saiba mais sobre eles por aqui. </Typography>
                         </Box>
                     </Grid>
                 </Grid>
@@ -86,13 +94,13 @@ function Sobre() {
 
 
 
-                <Grid container direction="row" justifyContent="center" alignItems="center" padding={5} style={{ backgroundColor: "white" }}>
+                <Grid container className="backgound-white">
 
                     <Box>
-                        <Typography variant="h3" gutterBottom color="black" align="center" className="font">Desenvolvedores</Typography>
+                        <Typography variant="h3" className="font">Desenvolvedores</Typography>
                     </Box>
 
-                    <Grid container display="flex" direction="row" justifyContent="center" alignItems="center" borderRadius="20px" paddingY={5}>
+                    <Grid container className="alinhamento" paddingY={5}>
                         <Grid item xs={2} className="cards" >
                             <Card>
                                 <CardActionArea>
@@ -102,16 +110,16 @@ function Sobre() {
                                         alt=""
                                     />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h6" component="div">
+                                        <Typography gutterBottom variant="h6" className='texto3'>
                                             Julia Farias
                                         </Typography>
 
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Button size="small" color="primary">
+                                    <Button size="small">
                                         <a href="https://github.com/JuliaMoonCrystal" target="_blank">
-                                            <GitHubIncon className="icons" />
+                                            <GitHubIncon className="icons alinhamento2" />
                                         </a>
                                         <a href="https://www.linkedin.com/in/julia-farias-da-rocha-bb5703180/" target="_blank">
                                             <LinkedInIcon className="icons1" />
@@ -129,7 +137,7 @@ function Sobre() {
                                         alt=""
                                     />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h6" component="div">
+                                        <Typography gutterBottom variant="h6" className='texto3'>
                                             Vitor Santana
                                         </Typography>
 
@@ -156,7 +164,7 @@ function Sobre() {
                                         alt=""
                                     />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h6" component="div">
+                                        <Typography gutterBottom variant="h6" className='texto3'>
                                             Beatriz Paixão
                                         </Typography>
 
@@ -183,7 +191,7 @@ function Sobre() {
                                         alt=""
                                     />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h6" component="div">
+                                        <Typography gutterBottom variant="h6" className='texto3'>
                                             Gustavo S.
                                         </Typography>
 
@@ -211,7 +219,7 @@ function Sobre() {
                                         alt=""
                                     />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h6" component="div">
+                                        <Typography gutterBottom variant="h6" className='texto3'>
                                             Jessica Lemos
                                         </Typography>
 

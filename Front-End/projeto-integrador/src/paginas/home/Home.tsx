@@ -55,7 +55,7 @@ function Home() {
 
                         <Box display="flex" alignItems="center" >
                             <Box className="p">
-                                <img src="https://i.imgur.com/pu1piPx.png" alt="Logo desenho da árvore acácia" className="img"/>
+                                <img src="https://i.imgur.com/pu1piPx.png" alt="Logo desenho da árvore acácia" className="image"/>
                             </Box>
                             <Box className="cor">
                                 <Typography className='titulo1' variant="h5" padding={2} > • PROJETO ACÁCIA</Typography>

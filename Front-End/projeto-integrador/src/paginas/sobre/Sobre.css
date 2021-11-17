@@ -1,8 +1,13 @@
 .img {
     width: 80%;
     display: block;
-    margin: 0 auto;
+    margin: 70px;
+}
 
+.img2{
+    width: 80%;
+    display: block;
+    margin: auto;
 }
 
 .cards{
@@ -12,11 +17,28 @@
 
 .font{
     font-family: 'EB Garamond', sans-serif!important;
+    color: black;
 }
 
 .texto{
     color: black!important;
+    font-family: 'EB Garamond', sans-serif!important;
+}
+
+.texto2{
+    color: black!important;
     font-family: 'Roboto', sans-serif!important;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 17px!important;
+}
+
+.texto3{
+    color: black!important;
+    font-family: 'Roboto', sans-serif!important;
+    justify-content: end;
 }
 
 .backgound{
@@ -24,12 +46,28 @@
 }
 
 .backgound-white{
-    background-color: white;
+    background-color: white; 
+    justify-content: center;
     padding:2%;
 }
 
-.border{
+.alinhamento{
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
+}
+
+.alinhamento2{
+    justify-content: center!important;
+}
+
+.border2{
+    border-radius: 30px;
+    width: 90%;
+    margin: auto;
+
 }
 
 .icons{
@@ -43,4 +81,9 @@
     font-size: 35px!important;
     color: black;
     padding: 5px;
+}
+
+.sobrenos{
+    justify-content: center;
+    padding-top: 15px;
 }
