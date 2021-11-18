@@ -155,8 +155,9 @@ function CadastroPostagem() {
     }
 
     return (
-        <div className="color">
-            <Container maxWidth="sm" >
+        <div>
+
+            <Container maxWidth="sm">
                 <Card variant="outlined" className='cardCadastro'>
                     <CardContent>
                         <form onSubmit={onSubmit} >
@@ -194,7 +195,7 @@ function CadastroPostagem() {
                     </CardContent>
                 </Card>
             </Container>
-            </div>
+        </div>
     )
 }
 

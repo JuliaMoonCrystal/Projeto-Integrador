@@ -35,7 +35,7 @@ function Login() {
     useEffect(() => {
       if (token !== '') {
         dispatch(addToken(token));
-        history.push('/Home')
+        history.push('/home')
       }
     }, [token])
   
