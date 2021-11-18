@@ -2,3 +2,14 @@
     margin-top: 50px;
     border-radius: 10px!important;
  }
+
+.textos1{
+    font-family: 'EB Garamond', sans-serif!important;
+    color: "black";
+    font-size: 50px!important;
+    text-align: center;
+}
+
+.backgrounds{
+    background-color: #50BFBF;
+}
