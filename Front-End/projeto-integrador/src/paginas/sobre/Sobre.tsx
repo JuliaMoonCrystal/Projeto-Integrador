@@ -200,10 +200,10 @@ function Sobre() {
                                 </CardActionArea>
                                 <CardActions>
                                     <Button size="small" color="primary">
-                                        <a href="https://www.linkedin.com/in/gustavo-sotrati/" target="_blank">
+                                        <a href="https://github.com/Guzius" target="_blank">
                                             <GitHubIncon className="icons" />
                                         </a>
-                                        <a href="https://github.com/Guzius" target="_blank">
+                                        <a href="https://www.linkedin.com/in/gustavo-sotrati/" target="_blank">
                                             <LinkedInIcon className="icons1" />
                                         </a>
                                     </Button>
