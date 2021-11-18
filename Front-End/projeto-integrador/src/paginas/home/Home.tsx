@@ -32,7 +32,7 @@ function Home() {
 
                 }
             )
-            history.push("/Login")
+            history.push("/login")
 
         }
     }, [token])
