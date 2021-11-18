@@ -51,7 +51,7 @@ function Home() {
 
             <div>
                 <Grid container>
-                    <Grid xs={6} padding={2}>
+                    <Grid xs={6}>
 
                         <Box display="flex" alignItems="center" >
                             <Box className="p">
@@ -67,7 +67,7 @@ function Home() {
                             <Box alignItems="flex-end" paddingTop={2} >
 
                                 <Link to="/sobre" className="text-decorator-none">
-                                    <Typography className='text1 veja' variant="h6" padding={2} component="h5"> veja mais<br /> ________________________________________________________________________________________  </Typography>
+                                    <Typography className='text1 veja' variant="h6"  component="h5">• Veja mais<br /> ________________________________________________________________  </Typography>
                                 </Link>
 
                             </Box>
@@ -88,7 +88,7 @@ function Home() {
                     <Grid xs={12}>
                         <Box padding={2}>
 
-                            <img src="https://i.imgur.com/XrchBDJ.png" alt="Icone de esgoto" width="100%" className="border2" />
+                            <img src="https://i.imgur.com/XrchBDJ.png" alt="Icone de esgoto" width="100%"/>
                         </Box>
                     </Grid>
 

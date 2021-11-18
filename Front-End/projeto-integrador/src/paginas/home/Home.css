@@ -30,18 +30,18 @@
 
 .text1{
     font-family: 'Roboto', sans-serif!important;
-    font-size: 20px!important;
-    text-align: justify;
-    font-weight: bold;
+    color: black!important;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+     padding-top: 5px;
+    font-size: 17px!important;
+   
 }
 
 .border{
     border-radius: 5px;
     max-width: 100%;
-}
-
-.border2{
-    border-radius: 10px;
 }
 
 .border3{
@@ -58,8 +58,9 @@
 .veja{
     text-align: right;
     font-size: 20px!important;
-    color: #50BFBF;
+    color: #50BFBF!important;
     font-weight: bold;
+    padding-right: 40px;
 }
 
 .p{
@@ -74,9 +75,9 @@
 .cor{
     background-color: #50BFBF;
     border-radius: 10px;
-    padding-right: 45%;
+    padding-right: 42%;
 }
 
 .image{
-    max-width: 20vh;
+    max-width: 15vh;
 }
