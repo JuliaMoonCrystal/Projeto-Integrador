@@ -155,6 +155,7 @@ function CadastroPostagem() {
     }
 
     return (
+        <div className="color">
             <Container maxWidth="sm" >
                 <Card variant="outlined" className='cardCadastro'>
                     <CardContent>
@@ -189,6 +190,7 @@ function CadastroPostagem() {
                     </CardContent>
                 </Card>
             </Container>
+            </div>
     )
 }
 

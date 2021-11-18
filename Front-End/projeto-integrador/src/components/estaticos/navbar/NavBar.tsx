@@ -50,7 +50,7 @@ function Navbar() {
       var navbarComponent;
 
       if (token != "") {
-          navbarComponent=<AppBar position="fixed" className="inicio">
+          navbarComponent=<div><AppBar position="fixed" className="inicio">
           <Toolbar >
               <Link to="/home" className="fontNav1">
                   <Box>
@@ -123,13 +123,14 @@ function Navbar() {
               </Box>
           </Toolbar>
       </AppBar>
+      <Grid className="inicio"> </Grid>
+      </div>
       
       }
 
     return (
         <>
              {navbarComponent}
-             <Grid className="inicio"> </Grid>
         </>
     )
 }
